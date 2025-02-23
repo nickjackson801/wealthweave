@@ -1,0 +1,129 @@
+.about-container {
+  padding: 6rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-header h1 {
+  font-size: 3.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #4b5563;
+}
+
+.mission-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mission-section p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+}
+
+.why-section, .approach-section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.why-grid, .approach-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.why-item, .approach-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.why-item h3, .approach-item h3 {
+  color: #2563eb;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.why-item p, .approach-item p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.commitment-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.commitment-section p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.cta-container {
+  margin-top: 2rem;
+}
+
+.start-learning-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-learning-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .why-grid, .approach-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-section, .commitment-section {
+    padding: 2rem;
+  }
+} 
