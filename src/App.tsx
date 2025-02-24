@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -20,6 +21,14 @@ function App() {
         </Routes>
       </div>
     </Router>
+=======
+
+function App() {
+  return (
+    <div>
+      <h1>WealthWeave</h1>
+    </div>
+>>>>>>> 610c1ac0b79ab55de782e3aeaa89147a2deebf68
   )
 }
 

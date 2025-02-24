@@ -1,0 +1,406 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.login-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.3rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.email-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.email-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background: #1d4ed8;
+}
+
+.trial-badge {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-subtext {
+  margin-top: 1rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem auto 3rem;
+  max-width: 1000px;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item h3 {
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature-item p {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.cta-section {
+  margin-top: 2rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.features-btn {
+  background: none;
+  border: none;
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.features-btn:hover {
+  color: #2563eb;
+}
+
+.features-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  width: max-content;
+  min-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  z-index: 1000;
+  max-height: calc(90vh - 4rem);
+  overflow-y: auto;
+  transform: translateX(-65%);
+}
+
+.features-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.features-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.features-dropdown::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 4px;
+}
+
+.features-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.features-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 65%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+.feature-category {
+  text-align: left;
+}
+
+.feature-category h3 {
+  color: #2563eb;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.feature-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-category li {
+  padding: 0;
+  list-style: none;
+}
+
+.feature-category li::before {
+  content: none;
+}
+
+@media (max-width: 1024px) {
+  .features-dropdown {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .email-form {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .features-dropdown {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    border-radius: 0;
+    padding: 1rem;
+    height: calc(100vh - 3rem);
+    overflow-y: auto;
+  }
+
+  .features-dropdown::before {
+    display: none;
+  }
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: #2563eb;
+}
+
+.home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.home-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #1f2937;
+  transition: color 0.3s ease;
+}
+
+.home-btn:hover .home-icon {
+  color: #2563eb;
+}
+
+.course-link-btn {
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.course-link-btn:hover {
+  color: #2563eb;
+}
+
+.course-link-btn::before {
+  content: '•';
+  color: #2563eb;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
